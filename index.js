@@ -36,7 +36,7 @@ sunProfit.style.display="none"
     if(initial > current){
 
         var loss = (initial*stock)-(current*stock);
-        var lossPercentage = ((loss/initial).toFixed(1))*100
+        var lossPercentage = (((loss/initial)*100).toFixed(1))
         rainLoss.style.display="flex"
         userOutput.style.color="red"
 
@@ -46,7 +46,7 @@ sunProfit.style.display="none"
     else if(current > initial){
 
             var profit =(current - initial)*stock
-            var profitPercentage = ((profit/initial).toFixed(1))*100
+            var profitPercentage = (((profit/initial)*100).toFixed(1))
             sunProfit.style.display="flex"
             userOutput.style.color="green"
 
