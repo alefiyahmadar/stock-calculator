@@ -24,6 +24,7 @@ function showMessage(message){
 
 userOutput.innerText=message
 }
+console.log(price , stock , current)
 
 
 
@@ -49,6 +50,7 @@ sunProfit.style.display="none"
             var profitPercentage = (((profit/initial)*100).toFixed(1))
             sunProfit.style.display="flex"
             userOutput.style.color="green"
+            
 
             showMessage("yayyy! its a profit of " + profit + " and " + profitPercentage + "%")
             
