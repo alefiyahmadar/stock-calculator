@@ -15,6 +15,7 @@ function showOutput(){
 var price = initialPrice.value
 var stock = numberOfStock.value
 var current = currentPrice.value
+console.log(price , stock , current)
 
 var output = calculateProfitOrLoss(price,stock,current)
 return output
@@ -24,7 +25,7 @@ function showMessage(message){
 
 userOutput.innerText=message
 }
-console.log(price , stock , current)
+
 
 
 
@@ -52,7 +53,7 @@ sunProfit.style.display="none"
             userOutput.style.color="green"
             
 
-            showMessage("yayyy! its a profit of " + profit + " and " + profitPercentage + "%")
+            showMessage("yayyy! its a profit of " + `₹${profit}` + " and " + profitPercentage + "%")
             
         
     }
